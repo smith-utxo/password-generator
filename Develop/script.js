@@ -1,6 +1,6 @@
 // Assignment code here
 var lowerCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var UpperCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; 
+var upperCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; 
 var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]; 
 var specialCharacters = ["!", "#", "$", "%", "&", "'", "*", "(", ")"]; 
 
@@ -42,10 +42,10 @@ function generatePassword() {
   }
 
   if(lowerPW) {
-    chosenChars = chosenChars.concat(lowerPW); 
+    chosenChars = chosenChars.concat(lowerCharacters); 
   }
   if(upperPW) {
-    chosenChars = chosenChars.concat(UpperCharacters);
+    chosenChars = chosenChars.concat(upperCharacters);
   }
   if(numericPW){
     chosenChars = chosenChars.concat(numericCharacters);
@@ -54,9 +54,10 @@ function generatePassword() {
     chosenChars = chosenChars.concat(specialCharacters);
   }
 
+console.log(chosenChars); 
 
 for (var i = 0; i < pwLength; i++) {
-  randomPW[i] = chosenChars[Math.floor(Math.random() * pwLength)];  
+  randomPW[i] = chosenChars[Math.floor(Math.random() * chosenChars.length)];  
 }
 return randomPW; 
 }
