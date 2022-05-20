@@ -19,6 +19,8 @@ function writePassword() {
 // Display the password value and also remove the commas by utilizing the .join method 
   passwordText.value = password.join("");
 
+ gandalfPicture(); 
+
 }
 
 function generatePassword() {
@@ -70,3 +72,9 @@ for (var i = 0; i < pwLength; i++) {
 return randomPW; 
 }
 
+function gandalfPicture() {
+  var wizardDiv = document.getElementById('gandalf'); 
+  var image = document.createElement("img"); 
+  image.src = "./assets/images/keep-it-secret.jpg"; 
+  wizardDiv.appendChild(image); 
+}
