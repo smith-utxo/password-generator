@@ -1,6 +1,8 @@
 ## Purpose
 A CUSTOM PASSWORD GENERATOR THAT UTILIZES THE FOLLOWING: 
 
+![](assets/images/screenshot.PNG)
+
  - Must be between 8 - 128 characters in length
 
    Must include At least one of the following: 
