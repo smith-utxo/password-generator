@@ -73,8 +73,15 @@ return randomPW;
 }
 
 function gandalfPicture() {
+  // If gandalf image already exists, skip this function
+  if (document.querySelector("img")) {
+    return false; 
+  }
+  // Otherwise, post an image of Gandalf telling you to keep it secret and safe! 
+  else {
   var wizardDiv = document.getElementById('gandalf'); 
   var image = document.createElement("img"); 
   image.src = "./assets/images/keep-it-secret.jpg"; 
   wizardDiv.appendChild(image); 
-}
+   }
+  }
