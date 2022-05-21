@@ -1,8 +1,6 @@
 ## Purpose
 A CUSTOM PASSWORD GENERATOR THAT UTILIZES THE FOLLOWING: 
 
-![](assets/images/screenshot.PNG)
-
  - Must be between 8 - 128 characters in length
 
    Must include At least one of the following: 
@@ -10,6 +8,10 @@ A CUSTOM PASSWORD GENERATOR THAT UTILIZES THE FOLLOWING:
       - UpperCase Characters 
       - Numeric Characters
       - Special Characters
+
+## ScreenShot 
+
+![](assets/images/screenshot.PNG)
       
 ## Deployed URL: 
 <https://smith-utxo.github.io/password-generator/>
